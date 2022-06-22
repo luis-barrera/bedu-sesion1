@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fffbf7;
+  margin: 0;
+  top: 0;
 }
 
 h1 {
@@ -20,6 +26,9 @@ li {
 button {
   color: #fff;
   background-color: #025157;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
 }
 
 .header {
@@ -54,7 +63,7 @@ button {
 }
 
 .navbar {
-  width: 70%;
+  width: 50%;
   text-align: center;
   color: #025157;
   font-weight: 500;
@@ -67,7 +76,7 @@ button {
 
 .actions {
   width: 15%;
-  text-align: left;
+  text-align: right;
   font-size: 14px;
   font-weight: 600;
 }
@@ -123,4 +132,28 @@ button {
 
 .publicidad > form p {
   color: #025157;
+}
+
+.growing {
+  background-color: #a1d683;
+  display: flex;
+  padding: 5% 15%;
+  margin: 0;
+
+}
+
+#growing-text {
+  line-height: 24px;
+  flex-grow: 2;
+  display: flex;
+  flex-flow: column;
+  padding-right: 100px;
+}
+
+#growing-text img {
+  width: 25%;
+}
+
+#growing-stories {
+  flex-grow: 1;
 }
