@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ p {
 
 li {
   display: inline;
-}
+} */
 
 button {
   color: #fff;
@@ -62,7 +62,7 @@ button {
   width: 50%;
 }
 
-.navbar {
+/* .navbar {
   width: 50%;
   text-align: center;
   color: #025157;
@@ -72,9 +72,9 @@ button {
 .navbar > lu > li {
   display: inline;
   margin: 0 25px;
-}
+} */
 
-.actions {
+/* .actions {
   width: 15%;
   text-align: right;
   font-size: 14px;
@@ -95,7 +95,7 @@ button {
   margin: 12px 14px;
   border: 0;
   border-radius: 5px;
-}
+} */
 
 .main {
   margin-top: 140px;
@@ -157,3 +157,103 @@ button {
 #growing-stories {
   flex-grow: 1;
 }
+
+.features {
+  background-color: #67b54b;
+  display: grid;
+  /* height: 660px; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(2, 1fr); */
+  /* Forma abreviada */
+  grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  grid-gap: 8%;
+  padding: 8%;
+}
+
+.card {
+  padding: 5% 0 5% 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  overflow-x: hidden;
+}
+
+.card-text {
+  width: 55%;
+}
+
+.card-text img {
+  width: 50px;
+  margin: 0 40px;
+}
+
+.card-text h3 {
+  font-size: 1.5rem;
+  margin: .4rem 0;
+}
+
+.card-text p {
+  font-size: 1rem;
+  margin: .8rem 0;
+}
+
+.card-img {
+  padding: 5% 5% 5% 15%;
+}
+
+.card-img img {
+  height: 100%;
+}
+
+@media (max-width: 575px){
+  h1 {
+    font-size: 30px;
+  }
+  .main {
+    margin-top: 14px;
+  }
+  .navbar, .actions {
+    display: none;
+  }
+  .fixed-header {
+    display: none;
+  }
+  .banner > img {
+    width: 100%;
+  }
+  .publish {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .publish > form {
+    flex-direction: column;
+  }
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+  .publish > form > div > input {
+    width: 65%;
+  }
+  .video-section > video{
+    width: 100%;
+    margin: 10px auto;
+  }
+  .publish-blog {
+    margin: 10%;
+  }
+  .publish-blog > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+  .features .card {
+    margin: 20px 0;
+  }
+}
+
